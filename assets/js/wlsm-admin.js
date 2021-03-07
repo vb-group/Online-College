@@ -125,14 +125,14 @@
 		// Copy shortcodes.
 		copyToClipboard('#wlsm_college_management_fees_copy_btn', '#wlsm_college_management_fees_shortcode');
 		copyToClipboard('#wlsm_college_management_account_copy_btn', '#wlsm_college_management_account_shortcode');
-		copyToClipboard('#wlsm_school_management_inquiry_copy_btn', '#wlsm_school_management_inquiry_shortcode');
-		copyToClipboard('#wlsm_school_management_registration_copy_btn', '#wlsm_school_management_registration_shortcode');
+		copyToClipboard('#wlsm_college_management_inquiry _copy_btn', '#wlsm_college_management_inquiry _shortcode');
+		copyToClipboard('#wlsm_college_management_registration_copy_btn', '#wlsm_college_management_registration_shortcode');
 		copyToClipboard('#wlsm_college_management_fees_default_session_copy_btn', '#wlsm_college_management_fees_default_session_shortcode');
 		copyToClipboard('#wlsm_college_management_exam_time_table_copy_btn', '#wlsm_college_management_exam_time_table_shortcode');
 		copyToClipboard('#wlsm_college_management_exam_admit_card_copy_btn', '#wlsm_college_management_exam_admit_card_shortcode');
 		copyToClipboard('#wlsm_college_management_exam_result_copy_btn', '#wlsm_college_management_exam_result_shortcode');
 		copyToClipboard('#wlsm_college_management_certificate_copy_btn', '#wlsm_college_management_certificate_shortcode');
-		copyToClipboard('#wlsm_school_management_noticeboard_copy_btn', '#wlsm_school_management_noticeboard_shortcode');
+		copyToClipboard('#wlsm_college_management_noticeboard_copy_btn', '#wlsm_college_management_noticeboard_shortcode');
 
 		// Loading icon variables.
 		var loaderContainer = $('<span/>', {

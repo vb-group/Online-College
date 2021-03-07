@@ -25,8 +25,8 @@ defined( 'ABSPATH' ) || die();
 				<li class="list-inline-item">
 					<div class="alert alert-light">
 						<?php esc_html_e( 'To display admission inquiry form on a page or post, use shortcode', 'school-management' ); ?>:<br>
-							<span id="wlsm_school_management_inquiry_shortcode" class="wlsm-font-bold text-dark">[school_management_inquiry school_id="<?php echo esc_html( $school_id ); ?>"]</span>
-						<button id="wlsm_school_management_inquiry_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+							<span id="wlsm_college_management_inquiry _shortcode" class="wlsm-font-bold text-dark">[college_management_inquiry  school_id="<?php echo esc_html( $school_id ); ?>"]</span>
+						<button id="wlsm_college_management_inquiry _copy_btn" class="btn btn-outline-success btn-sm" type="button">
 							<?php esc_html_e( 'Copy', 'school-management' ); ?>
 						</button>
 					</div>
@@ -35,8 +35,8 @@ defined( 'ABSPATH' ) || die();
 				<li class="list-inline-item">
 					<div class="alert alert-light">
 						<?php esc_html_e( 'To display registration form on a page or post, use shortcode', 'school-management' ); ?>:<br>
-							<span id="wlsm_school_management_registration_shortcode" class="wlsm-font-bold text-dark">[school_management_registration school_id="<?php echo esc_html( $school_id ); ?>"]</span>
-						<button id="wlsm_school_management_registration_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+							<span id="wlsm_college_management_registration_shortcode" class="wlsm-font-bold text-dark">[college_management_registration school_id="<?php echo esc_html( $school_id ); ?>"]</span>
+						<button id="wlsm_college_management_registration_copy_btn" class="btn btn-outline-success btn-sm" type="button">
 							<?php esc_html_e( 'Copy', 'school-management' ); ?>
 						</button>
 					</div>
@@ -45,8 +45,8 @@ defined( 'ABSPATH' ) || die();
 				<li class="list-inline-item">
 					<div class="alert alert-light">
 						<?php esc_html_e( 'To display noticeboard on a page or post, use shortcode', 'school-management' ); ?>:<br>
-							<span id="wlsm_school_management_noticeboard_shortcode" class="wlsm-font-bold text-dark">[school_management_noticeboard school_id="<?php echo esc_html( $school_id ); ?>"]</span>
-						<button id="wlsm_school_management_noticeboard_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+							<span id="wlsm_college_management_noticeboard_shortcode" class="wlsm-font-bold text-dark">[college_management_noticeboard school_id="<?php echo esc_html( $school_id ); ?>"]</span>
+						<button id="wlsm_college_management_noticeboard_copy_btn" class="btn btn-outline-success btn-sm" type="button">
 							<?php esc_html_e( 'Copy', 'school-management' ); ?>
 						</button>
 					</div>
