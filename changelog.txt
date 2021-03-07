@@ -1,0 +1,315 @@
+Version 6.7 [24-11-2020]
+========
+* Updated : SMS Settings Infigo point & MsgClub.
+
+Version 6.6 [18-11-2020]
+========
+* Added : New Role permission.
+* Added : You can select subject in homework.
+* Added : Stats addded in Accounting.
+
+Version 6.5 [14-10-2020]
+========
+* Fixed: Exam Results Bug Fixed.
+* Added: Changelog Setting.
+
+Version 6.4 [10-10-2020]
+========
+* Fixed: Student Bulk Import admission date fix.
+* Added: Subjet Wise remark system.
+* Added: Library Book issued label and quantity.
+* Added: Update Notice fixed.
+* Added: Email setup helper links.
+* Fixed: Zoom live class validation error fixed.
+
+Version 6.3 [25-09-2020]
+========
+* Fixed: Mobile view.
+* Added: School details on student dashboard.
+* Fixed: Stduent Login redirect.
+
+Version 6.2 [18-09-2020]
+========
+* Fixed: databse issue.
+* added: French Translation.
+
+Version 6.1 [25-08-2020]
+========
+* Added: dashboard customization.
+
+Version 6.0 [25-08-2020]
+========
+* Added: Now invoices wll auto generate
+* Added: Dashboard disabled in fee type.
+
+Ver 5.9 (08 Aug 2020)
+========
+* Added:   vinuthan sms api.
+
+Ver 5.8 (23 July 2020)
+========
+* Updated: Stduent dashboard.
+* Added:   Admin now able to print student admission form detail.
+
+Ver 5.7 (16 July 2020)
+========
+* Updated: Homework module.
+* Removed: Settings to hide Transport and library.
+
+Ver 5.6 (26 june 2020)
+========
+* Added new featue now staff user can
+
+Ver 5.4 (09 june 2020)
+========
+* Added option for Stduent registration form to able show and hide individual field.
+* Added refrence field in inquiry form.
+* Added Transport and Library Menu hide option.
+
+Ver 5.3 (21 May 2020)
+========
+* Added API support for android/iOS apps.
+
+Ver 5.2 (18 May 2020)
+========
+* Added PHP incompatibility message for Zoom API.
+
+Ver 5.1 (15 May 2020)
+========
+* Added Zoom conference API for creating live classes.
+
+Ver 5.0 (06 May 2020)
+========
+* Added bank transfer payment method.
+
+Ver 4.9 (01 May 2020)
+========
+* Improved student dashboard design.
+* Fixed typos.
+* Added setting to enter redirect URL after logout.
+
+Ver 4.8 (07 April 2020)
+========
+* Fixed mobile display issues.
+
+Ver 4.7 (04 March 2020)
+========
+* Added books issued in student dashboard.
+* Fixed staff attendance table design.
+
+Ver 4.6 (25 Feburary 2020)
+========
+* Added redirect URL settings for registration form.
+* Added subject-wise results assessment.
+* Print subject-wise final marksheet.
+* Added exam group field for exams.
+
+Ver 4.5 (21 Feburary 2020)
+========
+* Added GDPR text settings for inquiry.
+* Fixed exam overall grade bug.
+* Fixed typos.
+* PHP 5.6 compatibility issue fixed.
+* Added registration shortcode and settings.
+* Auto generate admission number settings.
+
+Ver 4.4 (17 Feburary 2020)
+========
+* Fixed CSS issues.
+
+Ver 4.3 (14 Feburary 2020)
+========
+* Fixed minor bugs.
+* Added bulk delete option for students table.
+* Added attendance percentage on student dashboard.
+* Added ID number, ID proof, extra note fields for student.
+* Added separate permissions to delete students, invoices, sections.
+* Class teacher restricted to class students and class attendance.
+
+Ver 4.2 (07 Feburary 2020)
+========
+* Added class teacher and bus in-charge field for staff record
+* Improved class sections table
+* Added student leave request and approval feature
+* Added staff leave request and approval feature
+* Added more placeholder fields for certificate generation
+* Added events feature
+
+Ver 4.1 (31 January 2020)
+========
+* Added noticeboard in parent dashboard
+* Export exam results with ranks
+* Added description field in staff detail
+* Added logging feature
+
+Ver 4.0 (22 January 2020)
+========
+* Added inquiry settings
+* Added inquiry email and SMS templates for inquisitor and admin
+* Added custom message after inquiry submission
+
+Ver 3.9 (20 January 2020)
+========
+* Added multi-selector for assigning classes
+* Added student rank in exam results
+* Export/Import exam results
+
+Ver 3.8 (16 January 2020)
+========
+* Updated Infigo Point SMS API
+
+Ver 3.7 (13 January 2020)
+========
+* Added staff attendance
+* Added Paytm payment gateway
+
+Ver 3.6 (10 January 2020)
+========
+* Added exam results assessment
+
+Ver 3.5 (08 January 2020)
+========
+* Improved file upload validation
+
+Ver 3.4 (06 January 2020)
+========
+* Added homework section
+
+Ver 3.3 (27 December 2019)
+========
+* Added EBulkSMS SMS carrier
+
+Ver 3.2 (25 December 2019)
+========
+* Uninstall/Reset bug fixed
+
+Ver 3.1 (23 December 2019)
+========
+* Added transport management
+
+Ver 3.0 (20 December 2019)
+========
+* Send test email for each template
+* Send test SMS for each template
+* Added paystack payment method
+
+Ver 2.9 (14 December 2019)
+========
+* Noticeboard shortcode bug fixed
+* Library books issued quantity bug fixed
+
+Ver 2.8 (12 December 2019)
+========
+* Added float value support for obtained marks
+
+Ver 2.7 (10 December 2019)
+========
+* Added books issued quantity limit
+* New permission added for viewing payment stats on dashboard
+* Added textlocal SMS provider
+* Minor bugs fixes
+
+Ver 2.6 (04 December 2019)
+========
+* Changed expense and income stats by session in dashboard
+* Added library stats in dashboard
+* Documentation updated
+
+Ver 2.5 (02 December 2019)
+========
+* Added payment date field when adding offline payment
+* Added students library cards feature
+
+Ver 2.4 (28 November 2019)
+========
+* Added settings to show charts on dashboard
+* Added chart.js library for charts
+* Added library management
+
+Ver 2.3 (22 November 2019)
+========
+* Added exams stats on dashboard
+* Added total fees structure amount
+* Added monthly admissions and payments charts
+* Added monthly expense and income charts
+
+Ver 2.2 (19 November 2019)
+========
+* Added city, state and country fields for students
+* Added search filter for city, state and country
+* New feature: class specific notices
+* Update: Student dashboard design
+
+Ver 2.1 (15 November 2019)
+========
+* Bulk import students from CSV file
+
+Ver 2.0 (13 November 2019)
+========
+* Improved exam dashboard
+* Added new menu for admit cards and exam results
+* Account settings in student and parent dashboard
+* Added grade criteria for exams
+* Added shortcode for exam results
+* Added shortcode for certificate
+
+Ver 1.9 (07 November 2019)
+========
+* Added teacher name in class time table
+* Added new SMS to parents templates
+* Added MsgClub SMS carrier
+* Added exam results management
+* Added Pesapal payment gateway
+* Added Msg91 SMS carrier
+* Added enrollment prefix settings
+
+Ver 1.8 (31 October 2019)
+========
+* Added class timetable
+
+Ver 1.7 (24 October 2019)
+========
+* Send custom email and SMS to students
+* Improved student dashboard design
+* Added student absent SMS notification to parent
+
+Ver 1.6 (21 October 2019)
+========
+* Generate student certificate
+
+Ver 1.5 (12 October 2019)
+========
+* Add PayPal payment gateway
+* Minor bug fixes
+
+Ver 1.4 (07 October 2019)
+========
+* Print ID cards in bulk
+* Updated documentation
+
+Ver 1.3 (01 October 2019)
+========
+* Added fee types
+* Added fee structure for students at the time of admission
+* View student fee structure when creating an invoice
+
+Ver 1.2 (28 September 2019)
+========
+* Added print preview
+* Export student records, inquiries to CSV
+* Export invoices, expenses and income to CSV
+* GDPR compliance for inquiry form
+
+Ver 1.1 (26 September 2019)
+========
+* Improved dashboard design
+* Added parent login and dashboard
+* Added fees shortcode session wise
+* Added exam time table shortcode school wise
+* Added exam admit card shortcode
+* Added print preview for ID card
+* Added admission from inquiry
+
+Ver 1.0 (23 September 2019)
+========
+* New release
