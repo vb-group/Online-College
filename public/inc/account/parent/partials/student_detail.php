@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) || die();
 	<span><?php echo esc_html( WLSM_M_Staff_Class::get_name_text( $student->student_name ) ); ?></span>
 	<br>
 	<span class="wlsm-font-bold"><?php esc_html_e( 'School', 'school-management' ); ?>:</span>
-	<span><?php echo esc_html( WLSM_M_School::get_label_text( $student->school_name ) ); ?></span>
+	<span><?php echo esc_html( WLSM_M_School::get_label_text( $student->COLLEGE_NAME ) ); ?></span>
 	<br>
 	<span class="wlsm-font-bold"><?php esc_html_e( 'Session', 'school-management' ); ?>:</span>
 	<span><?php echo esc_html( WLSM_M_Session::get_label_text( $student->session_label ) ); ?></span>

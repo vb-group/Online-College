@@ -392,7 +392,7 @@ class WLSM_Helper {
 			'father-name'        => esc_html__( 'Father Name', 'school-management' ),
 			'mother-name'        => esc_html__( 'Mother Name', 'school-management' ),
 			'class-teacher'      => esc_html__( 'Class Teacher', 'school-management' ),
-			'school-name'        => esc_html__( 'School Name', 'school-management' ),
+			'school-name'        => esc_html__( 'College Name', 'school-management' ),
 			'school-phone'       => esc_html__( 'School Phone', 'school-management' ),
 			'school-email'       => esc_html__( 'School Email', 'school-management' ),
 			'school-address'     => esc_html__( 'School Address', 'school-management' ),
@@ -426,7 +426,7 @@ class WLSM_Helper {
 	}
 
 	public static function certificate_place_holders( $school_id = '' ) {
-		$school_name     = '';
+		$COLLEGE_NAME     = '';
 		$school_phone    = '';
 		$school_email    = '';
 		$school_address  = '';
@@ -434,7 +434,7 @@ class WLSM_Helper {
 
 		if ( $school_id ) {
 			$school         = WLSM_M_School::fetch_school( $school_id );
-			$school_name    = esc_html( WLSM_M_School::get_label_text( $school->label ) );
+			$COLLEGE_NAME    = esc_html( WLSM_M_School::get_label_text( $school->label ) );
 			$school_phone   = esc_html( WLSM_M_School::get_phone_text( $school->phone ) );
 			$school_email   = esc_html( WLSM_M_School::get_email_text( $school->email ) );
 			$school_address = esc_html( WLSM_M_School::get_address_text( $school->address ) );
@@ -467,7 +467,7 @@ class WLSM_Helper {
 			'father-name'        => '[FATHER_NAME]',
 			'mother-name'        => '[MOTHER_NAME]',
 			'class-teacher'      => '[CLASS_TEACHER]',
-			'school-name'        => $school_name,
+			'school-name'        => $COLLEGE_NAME,
 			'school-phone'       => $school_phone,
 			'school-email'       => $school_email,
 			'school-address'     => $school_address,

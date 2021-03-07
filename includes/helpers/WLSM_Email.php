@@ -150,7 +150,7 @@ class WLSM_Email {
 			'[LOGIN_USERNAME]'    => esc_html__( 'Login Username', 'school-management' ),
 			'[LOGIN_EMAIL]'       => esc_html__( 'Login Email Number', 'school-management' ),
 			'[LOGIN_PASSWORD]'    => esc_html__( 'Login Password', 'school-management' ),
-			'[SCHOOL_NAME]'       => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'       => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -165,7 +165,7 @@ class WLSM_Email {
 			'[LOGIN_USERNAME]'    => esc_html__( 'Login Username', 'school-management' ),
 			'[LOGIN_EMAIL]'       => esc_html__( 'Login Email Number', 'school-management' ),
 			'[LOGIN_PASSWORD]'    => esc_html__( 'Login Password', 'school-management' ),
-			'[SCHOOL_NAME]'       => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'       => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -180,7 +180,7 @@ class WLSM_Email {
 			'[LOGIN_USERNAME]'    => esc_html__( 'Login Username', 'school-management' ),
 			'[LOGIN_EMAIL]'       => esc_html__( 'Login Email Number', 'school-management' ),
 			'[LOGIN_PASSWORD]'    => esc_html__( 'Login Password', 'school-management' ),
-			'[SCHOOL_NAME]'       => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'       => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -197,7 +197,7 @@ class WLSM_Email {
 			'[ROLL_NUMBER]'         => esc_html__( 'Roll Number', 'school-management' ),
 			'[ENROLLMENT_NUMBER]'   => esc_html__( 'Enrollment Number', 'school-management' ),
 			'[ADMISSION_NUMBER]'    => esc_html__( 'Admission Number', 'school-management' ),
-			'[SCHOOL_NAME]'         => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'         => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -214,7 +214,7 @@ class WLSM_Email {
 			'[ROLL_NUMBER]'         => esc_html__( 'Roll Number', 'school-management' ),
 			'[ENROLLMENT_NUMBER]'   => esc_html__( 'Enrollment Number', 'school-management' ),
 			'[ADMISSION_NUMBER]'    => esc_html__( 'Admission Number', 'school-management' ),
-			'[SCHOOL_NAME]'         => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'         => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -231,7 +231,7 @@ class WLSM_Email {
 			'[ROLL_NUMBER]'         => esc_html__( 'Roll Number', 'school-management' ),
 			'[ENROLLMENT_NUMBER]'   => esc_html__( 'Enrollment Number', 'school-management' ),
 			'[ADMISSION_NUMBER]'    => esc_html__( 'Admission Number', 'school-management' ),
-			'[SCHOOL_NAME]'         => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'         => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 
@@ -263,7 +263,7 @@ class WLSM_Email {
 			'[ADMISSION_NUMBER]'  => esc_html__( 'Admission Number', 'school-management' ),
 			'[LOGIN_USERNAME]'    => esc_html__( 'Login Username', 'school-management' ),
 			'[LOGIN_EMAIL]'       => esc_html__( 'Login Email Number', 'school-management' ),
-			'[SCHOOL_NAME]'       => esc_html__( 'School Name', 'school-management' ),
+			'[COLLEGE_NAME]'       => esc_html__( 'College Name', 'school-management' ),
 		);
 	}
 }

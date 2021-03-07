@@ -3496,7 +3496,7 @@ class WLSM_Api {
 					$students_data[] = array(
 						'id'                => $student->ID,
 						'name'              => esc_html( WLSM_M_Staff_Class::get_name_text( $student->student_name ) ),
-						'school'            => esc_html( WLSM_M_School::get_label_text( $student->school_name ) ),
+						'school'            => esc_html( WLSM_M_School::get_label_text( $student->COLLEGE_NAME ) ),
 						'session'           => esc_html( WLSM_M_Session::get_label_text( $student->session_label ) ),
 						'class'             => esc_html( WLSM_M_Class::get_label_text( $student->class_label ) ),
 						'section'           => esc_html( WLSM_M_Staff_Class::get_section_label_text( $student->section_label ) ),

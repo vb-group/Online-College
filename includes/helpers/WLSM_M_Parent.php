@@ -43,7 +43,7 @@ class WLSM_M_Parent {
 		}
 
 		$students = $wpdb->get_results(
-			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, c.label as class_label, se.label as section_label, s.label as school_name, cs.school_id, sr.enrollment_number, sr.admission_number, sr.roll_number, ss.label as session_label FROM ' . WLSM_STUDENT_RECORDS . ' as sr
+			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, c.label as class_label, se.label as section_label, s.label as COLLEGE_NAME, cs.school_id, sr.enrollment_number, sr.admission_number, sr.roll_number, ss.label as session_label FROM ' . WLSM_STUDENT_RECORDS . ' as sr
 			JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id
 			JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id
 			JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id
@@ -57,7 +57,7 @@ class WLSM_M_Parent {
 	public static function fetch_student( $student_id ) {
 		global $wpdb;
 		$student = $wpdb->get_row(
-			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, s.ID as school_id, c.label as class_label, sr.section_id, se.label as section_label, s.label as school_name, sr.enrollment_number, sr.admission_number, sr.roll_number, ss.label as session_label, se.class_school_id, sr.session_id FROM ' . WLSM_STUDENT_RECORDS . ' as sr
+			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, s.ID as school_id, c.label as class_label, sr.section_id, se.label as section_label, s.label as COLLEGE_NAME, sr.enrollment_number, sr.admission_number, sr.roll_number, ss.label as session_label, se.class_school_id, sr.session_id FROM ' . WLSM_STUDENT_RECORDS . ' as sr
 			JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id
 			JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id
 			JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id

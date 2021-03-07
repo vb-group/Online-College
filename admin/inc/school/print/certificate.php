@@ -76,7 +76,7 @@ if ( isset( $from_ajax ) ) {
 				?>
 				<img class="ctf-data-field wlsm-certificate-image" src="<?php echo esc_url( $image_url ); ?>">
 				<?php
-				$school_name     = '';
+				$COLLEGE_NAME     = '';
 				$school_phone    = '';
 				$school_email    = '';
 				$school_address  = '';
@@ -84,7 +84,7 @@ if ( isset( $from_ajax ) ) {
 
 				if ( $school_id ) {
 					$school         = WLSM_M_School::fetch_school( $school_id );
-					$school_name    = esc_html( WLSM_M_School::get_label_text( $school->label ) );
+					$COLLEGE_NAME    = esc_html( WLSM_M_School::get_label_text( $school->label ) );
 					$school_phone   = esc_html( WLSM_M_School::get_phone_text( $school->phone ) );
 					$school_email   = esc_html( WLSM_M_School::get_email_text( $school->email ) );
 					$school_address = esc_html( WLSM_M_School::get_address_text( $school->address ) );
@@ -175,7 +175,7 @@ if ( isset( $from_ajax ) ) {
 							$field_output = stripcslashes( $teacher_name );
 
 						} elseif ( 'school-name' === $field_key ) {
-							$field_output = $school_name;
+							$field_output = $COLLEGE_NAME;
 
 						} elseif ( 'school-phone' === $field_key ) {
 							$field_output = $school_phone;

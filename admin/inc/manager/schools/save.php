@@ -61,7 +61,7 @@ if ( isset( $_GET['id'] ) && ! empty( $_GET['id'] ) ) {
 						<?php
 						printf(
 							wp_kses(
-								/* translators: %s: school name */
+								/* translators: %s: College Name */
 								__( 'Edit College: <span class="text-secondary">%s</span>', 'school-management' ),
 								array(
 									'span' => array( 'class' => array() )

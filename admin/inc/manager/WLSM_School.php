@@ -216,7 +216,7 @@ class WLSM_School {
 			$errors = array();
 
 			if ( empty( $label ) ) {
-				$errors['label'] = esc_html__( 'Please provide school name.', 'school-management' );
+				$errors['label'] = esc_html__( 'Please provide College Name.', 'school-management' );
 			}
 
 			if ( strlen( $label ) > 191 ) {
@@ -271,7 +271,7 @@ class WLSM_School {
 			}
 
 			if ( $school_exist ) {
-				$errors['label'] = esc_html__( 'School name already exists.', 'school-management' );
+				$errors['label'] = esc_html__( 'College Name already exists.', 'school-management' );
 			}
 
 			$reset_enrollment = false;

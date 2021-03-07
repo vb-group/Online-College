@@ -24,7 +24,7 @@ $school_hide_library                = $settings_general['hide_library'];
 				<div class="row">
 					<div class="col-md-3">
 						<label for="wlsm_school_logo" class="wlsm-font-bold mt-1">
-							<?php esc_html_e( 'Upload School Logo', 'school-management' ); ?>:
+							<?php esc_html_e( 'Upload College Logo', 'school-management' ); ?>:
 						</label>
 					</div>
 					<div class="col-md-9">
@@ -57,7 +57,7 @@ $school_hide_library                = $settings_general['hide_library'];
 				<div class="row">
 					<div class="col-md-3">
 						<label for="wlsm_school_signature" class="wlsm-font-bold mt-1">
-							<?php esc_html_e( 'Upload School signature', 'school-management' ); ?>:
+							<?php esc_html_e( 'Upload College signature', 'school-management' ); ?>:
 						</label>
 					</div>
 					<div class="col-md-9">

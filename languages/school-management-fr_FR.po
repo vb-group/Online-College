@@ -385,7 +385,7 @@ msgstr "Il n'y a pas d'école."
 msgid "Add a New School"
 msgstr "Ajouter une nouvelle classe"
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/manager/schools/admins.php:36
 #: admin/inc/manager/schools/classes.php:48
 #: admin/inc/manager/schools/edit_admin.php:44
@@ -620,7 +620,7 @@ msgstr "Écoles"
 #: includes/helpers/WLSM_SMS.php:618 includes/helpers/WLSM_SMS.php:635
 #: includes/helpers/WLSM_SMS.php:652 includes/helpers/WLSM_SMS.php:665
 #: includes/helpers/WLSM_SMS.php:697
-msgid "School Name"
+msgid "College Name"
 msgstr "Nom de l'école"
 
 #: admin/inc/manager/schools/index.php:29
@@ -721,7 +721,7 @@ msgstr "Admins"
 msgid "Status"
 msgstr "Status"
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/manager/schools/save.php:65
 msgid "Edit School: <span class=\"text-secondary\">%s</span>"
 msgstr "Editez L'école: <span class=\"text-secondary\">%s</span>"
@@ -731,7 +731,7 @@ msgid "Add New School"
 msgstr "Ajouter une nouvelle école"
 
 #: admin/inc/manager/schools/save.php:108
-msgid "Enter school name"
+msgid "Enter College Name"
 msgstr "Entrez le Nom de l'école"
 
 #: admin/inc/manager/schools/save.php:113
@@ -1331,7 +1331,7 @@ msgid "School not found."
 msgstr "École non trouvée."
 
 #: admin/inc/manager/WLSM_School.php:219
-msgid "Please provide school name."
+msgid "Please provide College Name."
 msgstr "Veuillez indiquer le nom de l'école."
 
 #: admin/inc/manager/WLSM_School.php:227 admin/inc/manager/WLSM_School.php:231
@@ -1377,7 +1377,7 @@ msgid "Padding length cannot be less than 1."
 msgstr "Padding length cannot be less than 1."
 
 #: admin/inc/manager/WLSM_School.php:274
-msgid "School name already exists."
+msgid "College Name already exists."
 msgstr "Le nom de l'école existe déjà."
 
 #: admin/inc/manager/WLSM_School.php:290
@@ -6580,7 +6580,7 @@ msgid "Send Test Email"
 msgstr "Envoyer un courriel de test"
 
 #: admin/inc/school/staff/general/settings/general/index.php:25
-msgid "Upload School Logo"
+msgid "Upload College Logo"
 msgstr "Téléchargez le logo de l'école"
 
 #: admin/inc/school/staff/general/settings/general/index.php:35
@@ -7748,7 +7748,7 @@ msgstr "Cela supprimera la fiche de l'élève pour la session %s."
 msgid "Student record deleted successfully."
 msgstr "Dossier d'élève supprimé avec succès."
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/school/staff/general/WLSM_Staff_General.php:1540
 msgid "(<span class=\"wlsm-font-bold\">Transferred to:</span> %s)"
 msgstr "(<span class=\"wlsm-font-bold\">Transferred to:</span> %s)"

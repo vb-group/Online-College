@@ -18,7 +18,7 @@ class WLSM_Notify {
 		if ( $email_student_admission_enable || $sms_student_admission_enable ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -53,7 +53,7 @@ class WLSM_Notify {
 				'[LOGIN_USERNAME]'    => $student->username,
 				'[LOGIN_EMAIL]'       => $student->login_email,
 				'[LOGIN_PASSWORD]'    => $data['password'],
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $email_student_admission_enable && $email_to ) {
@@ -85,7 +85,7 @@ class WLSM_Notify {
 		if ( $email_invoice_generated_enable || $sms_invoice_generated_enable ) {
 			global $wpdb;
 			$invoice = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT i.ID, i.label as invoice_title, i.invoice_number, i.date_issued, i.due_date, (i.amount - i.discount) as payable, sr.name as student_name, sr.phone, sr.email, sr.admission_number, sr.enrollment_number, sr.roll_number, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_INVOICES . ' as i 
+				$wpdb->prepare( 'SELECT i.ID, i.label as invoice_title, i.invoice_number, i.date_issued, i.due_date, (i.amount - i.discount) as payable, sr.name as student_name, sr.phone, sr.email, sr.admission_number, sr.enrollment_number, sr.roll_number, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_INVOICES . ' as i 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = i.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
@@ -124,7 +124,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'         => $invoice->roll_number,
 				'[ENROLLMENT_NUMBER]'   => $invoice->enrollment_number,
 				'[ADMISSION_NUMBER]'    => $invoice->admission_number,
-				'[SCHOOL_NAME]'         => stripcslashes( $invoice->school_name ),
+				'[COLLEGE_NAME]'         => stripcslashes( $invoice->COLLEGE_NAME ),
 			);
 
 			if ( $email_invoice_generated_enable && $email_to ) {
@@ -156,7 +156,7 @@ class WLSM_Notify {
 		if ( $email_online_fee_submission_enable || $sms_online_fee_submission_enable ) {
 			global $wpdb;
 			$payment = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_PAYMENTS . ' as p 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_PAYMENTS . ' as p 
 					JOIN ' . WLSM_SCHOOLS . ' as s ON s.ID = p.school_id 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = p.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
@@ -195,7 +195,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'       => $payment->roll_number,
 				'[ENROLLMENT_NUMBER]' => $payment->enrollment_number,
 				'[ADMISSION_NUMBER]'  => $payment->admission_number,
-				'[SCHOOL_NAME]'       => stripcslashes( $payment->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $payment->COLLEGE_NAME ),
 			);
 
 			if ( $email_online_fee_submission_enable && $email_to ) {
@@ -227,7 +227,7 @@ class WLSM_Notify {
 		if ( $email_offline_fee_submission_enable || $sms_offline_fee_submission_enable ) {
 			global $wpdb;
 			$payment = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_PAYMENTS . ' as p 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_PAYMENTS . ' as p 
 					JOIN ' . WLSM_SCHOOLS . ' as s ON s.ID = p.school_id 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = p.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
@@ -266,7 +266,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'       => $payment->roll_number,
 				'[ENROLLMENT_NUMBER]' => $payment->enrollment_number,
 				'[ADMISSION_NUMBER]'  => $payment->admission_number,
-				'[SCHOOL_NAME]'       => stripcslashes( $payment->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $payment->COLLEGE_NAME ),
 			);
 
 			if ( $email_offline_fee_submission_enable && $email_to ) {
@@ -295,7 +295,7 @@ class WLSM_Notify {
 		if ( $sms_student_admission_to_parent_enable ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -329,7 +329,7 @@ class WLSM_Notify {
 				'[LOGIN_USERNAME]'    => $student->username,
 				'[LOGIN_EMAIL]'       => $student->login_email,
 				'[LOGIN_PASSWORD]'    => $data['password'],
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $sms_student_admission_to_parent_enable && $sms_to ) {
@@ -350,7 +350,7 @@ class WLSM_Notify {
 		if ( $sms_invoice_generated_to_parent_enable ) {
 			global $wpdb;
 			$invoice = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT i.ID, i.label as invoice_title, i.invoice_number, i.date_issued, i.due_date, (i.amount - i.discount) as payable, sr.name as student_name, sr.phone, sr.father_phone, sr.mother_phone, sr.email, sr.admission_number, sr.enrollment_number, sr.roll_number, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_INVOICES . ' as i 
+				$wpdb->prepare( 'SELECT i.ID, i.label as invoice_title, i.invoice_number, i.date_issued, i.due_date, (i.amount - i.discount) as payable, sr.name as student_name, sr.phone, sr.father_phone, sr.mother_phone, sr.email, sr.admission_number, sr.enrollment_number, sr.roll_number, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_INVOICES . ' as i 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = i.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
@@ -388,7 +388,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'         => $invoice->roll_number,
 				'[ENROLLMENT_NUMBER]'   => $invoice->enrollment_number,
 				'[ADMISSION_NUMBER]'    => $invoice->admission_number,
-				'[SCHOOL_NAME]'         => stripcslashes( $invoice->school_name ),
+				'[COLLEGE_NAME]'         => stripcslashes( $invoice->COLLEGE_NAME ),
 			);
 
 			if ( $sms_invoice_generated_to_parent_enable && $sms_to ) {
@@ -409,7 +409,7 @@ class WLSM_Notify {
 		if ( $sms_online_fee_submission_to_parent_enable ) {
 			global $wpdb;
 			$payment = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.father_phone, sr.mother_phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_PAYMENTS . ' as p 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.father_phone, sr.mother_phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_PAYMENTS . ' as p 
 					JOIN ' . WLSM_SCHOOLS . ' as s ON s.ID = p.school_id 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = p.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
@@ -447,7 +447,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'       => $payment->roll_number,
 				'[ENROLLMENT_NUMBER]' => $payment->enrollment_number,
 				'[ADMISSION_NUMBER]'  => $payment->admission_number,
-				'[SCHOOL_NAME]'       => stripcslashes( $payment->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $payment->COLLEGE_NAME ),
 			);
 
 			if ( $sms_online_fee_submission_to_parent_enable && $sms_to ) {
@@ -468,7 +468,7 @@ class WLSM_Notify {
 		if ( $sms_offline_fee_submission_to_parent_enable ) {
 			global $wpdb;
 			$payment = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.father_phone, sr.mother_phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as school_name FROM ' . WLSM_PAYMENTS . ' as p 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.admission_number, sr.enrollment_number, sr.roll_number, sr.phone, sr.father_phone, sr.mother_phone, sr.email, p.receipt_number, p.amount, p.payment_method, p.created_at, p.invoice_label, p.invoice_id, i.label as invoice_title, c.label as class_label, se.label as section_label, u.user_email as login_email, s.label as COLLEGE_NAME FROM ' . WLSM_PAYMENTS . ' as p 
 					JOIN ' . WLSM_SCHOOLS . ' as s ON s.ID = p.school_id 
 					JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = p.student_record_id 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
@@ -506,7 +506,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'       => $payment->roll_number,
 				'[ENROLLMENT_NUMBER]' => $payment->enrollment_number,
 				'[ADMISSION_NUMBER]'  => $payment->admission_number,
-				'[SCHOOL_NAME]'       => stripcslashes( $payment->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $payment->COLLEGE_NAME ),
 			);
 
 			if ( $sms_offline_fee_submission_to_parent_enable && $sms_to ) {
@@ -528,7 +528,7 @@ class WLSM_Notify {
 		if ( $sms_absent_student_enable ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -559,7 +559,7 @@ class WLSM_Notify {
 				'[ROLL_NUMBER]'       => $student->roll_number,
 				'[ENROLLMENT_NUMBER]' => $student->enrollment_number,
 				'[ADMISSION_NUMBER]'  => $student->admission_number,
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $sms_absent_student_enable && $sms_to ) {
@@ -580,7 +580,7 @@ class WLSM_Notify {
 		if ( $email['send'] || $sms['send'] ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.father_phone, sr.mother_phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -619,7 +619,7 @@ class WLSM_Notify {
 				'[ADMISSION_NUMBER]'  => $student->admission_number,
 				'[LOGIN_USERNAME]'    => $student->username,
 				'[LOGIN_EMAIL]'       => $student->login_email,
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $email['send'] && $email_to ) {
@@ -809,7 +809,7 @@ class WLSM_Notify {
 		if ( $email_student_registration_to_student_enable || $sms_student_registration_to_student_enable ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -844,7 +844,7 @@ class WLSM_Notify {
 				'[LOGIN_USERNAME]'    => $student->username,
 				'[LOGIN_EMAIL]'       => $student->login_email,
 				'[LOGIN_PASSWORD]'    => $data['password'],
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $email_student_registration_to_student_enable && $email_to ) {
@@ -876,7 +876,7 @@ class WLSM_Notify {
 		if ( $email_student_registration_to_admin_enable || $sms_student_registration_to_admin_enable ) {
 			global $wpdb;
 			$student = $wpdb->get_row(
-				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
+				$wpdb->prepare( 'SELECT sr.name as student_name, sr.email, sr.phone, sr.admission_number, sr.enrollment_number, c.label as class_label, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr 
 					JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id 
 					JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id 
 					JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id 
@@ -912,7 +912,7 @@ class WLSM_Notify {
 				'[LOGIN_USERNAME]'    => $student->username,
 				'[LOGIN_EMAIL]'       => $student->login_email,
 				'[LOGIN_PASSWORD]'    => $data['password'],
-				'[SCHOOL_NAME]'       => stripcslashes( $student->school_name ),
+				'[COLLEGE_NAME]'       => stripcslashes( $student->COLLEGE_NAME ),
 			);
 
 			if ( $email_student_registration_to_admin_enable && $email_to ) {

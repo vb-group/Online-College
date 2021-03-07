@@ -377,7 +377,7 @@ msgstr ""
 msgid "Add a New School"
 msgstr ""
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/manager/schools/admins.php:36
 #: admin/inc/manager/schools/classes.php:48
 #: admin/inc/manager/schools/edit_admin.php:44
@@ -610,7 +610,7 @@ msgstr ""
 #: includes/helpers/WLSM_SMS.php:618 includes/helpers/WLSM_SMS.php:635
 #: includes/helpers/WLSM_SMS.php:652 includes/helpers/WLSM_SMS.php:665
 #: includes/helpers/WLSM_SMS.php:697
-msgid "School Name"
+msgid "College Name"
 msgstr ""
 
 #: admin/inc/manager/schools/index.php:29
@@ -711,7 +711,7 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/manager/schools/save.php:65
 msgid "Edit School: <span class=\"text-secondary\">%s</span>"
 msgstr ""
@@ -721,7 +721,7 @@ msgid "Add New School"
 msgstr ""
 
 #: admin/inc/manager/schools/save.php:108
-msgid "Enter school name"
+msgid "Enter College Name"
 msgstr ""
 
 #: admin/inc/manager/schools/save.php:113
@@ -1300,7 +1300,7 @@ msgid "School not found."
 msgstr ""
 
 #: admin/inc/manager/WLSM_School.php:219
-msgid "Please provide school name."
+msgid "Please provide College Name."
 msgstr ""
 
 #: admin/inc/manager/WLSM_School.php:227 admin/inc/manager/WLSM_School.php:231
@@ -1346,7 +1346,7 @@ msgid "Padding length cannot be less than 1."
 msgstr ""
 
 #: admin/inc/manager/WLSM_School.php:274
-msgid "School name already exists."
+msgid "College Name already exists."
 msgstr ""
 
 #: admin/inc/manager/WLSM_School.php:290
@@ -6415,7 +6415,7 @@ msgid "Send Test Email"
 msgstr ""
 
 #: admin/inc/school/staff/general/settings/general/index.php:25
-msgid "Upload School Logo"
+msgid "Upload College Logo"
 msgstr ""
 
 #: admin/inc/school/staff/general/settings/general/index.php:35
@@ -7543,7 +7543,7 @@ msgstr ""
 msgid "Student record deleted successfully."
 msgstr ""
 
-#. translators: %s: school name
+#. translators: %s: College Name
 #: admin/inc/school/staff/general/WLSM_Staff_General.php:1540
 msgid "(<span class=\"wlsm-font-bold\">Transferred to:</span> %s)"
 msgstr ""

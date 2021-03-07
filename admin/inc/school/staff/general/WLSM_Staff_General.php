@@ -1567,7 +1567,7 @@ class WLSM_Staff_General
 								<?php
 								printf(
 									wp_kses(
-										/* translators: %s: school name */
+										/* translators: %s: College Name */
 										__('(<span class="wlsm-font-bold">Transferred to:</span> %s)', 'school-management'),
 										array('span' => array('class' => array()))
 									),

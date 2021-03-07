@@ -582,7 +582,7 @@ class WLSM_P_Invoice
 				wp_send_json_error(esc_html__('Your school is currently inactive.', 'school-management'));
 			}
 
-			$school_name = WLSM_M_School::get_label_text($school->label);
+			$COLLEGE_NAME = WLSM_M_School::get_label_text($school->label);
 
 			$due = $invoice->payable - $invoice->paid;
 
@@ -674,7 +674,7 @@ class WLSM_P_Invoice
 							'razorpay_key'    => esc_attr($razorpay_key),
 							'amount_in_paisa' => esc_attr($amount_in_paisa),
 							'currency'        => esc_attr($currency),
-							'school_name'     => esc_attr($school_name),
+							'COLLEGE_NAME'     => esc_attr($COLLEGE_NAME),
 							'school_logo_url' => esc_attr($school_logo_url),
 							'security'        => esc_attr($security),
 							'name'            => esc_attr($name),
@@ -714,7 +714,7 @@ class WLSM_P_Invoice
 							'stripe_key'      => esc_attr($stripe_key),
 							'amount_in_cents' => esc_attr($amount_in_cents),
 							'currency'        => esc_attr($currency),
-							'school_name'     => esc_attr($school_name),
+							'COLLEGE_NAME'     => esc_attr($COLLEGE_NAME),
 							'school_logo_url' => esc_attr($school_logo_url),
 							'security'        => esc_attr($security),
 							'name'            => esc_attr($name),
@@ -963,7 +963,7 @@ EOT;
 							'paystack_public_key' => esc_attr($paystack_public_key),
 							'amount_x_100'        => esc_attr($amount_x_100),
 							'currency'            => esc_attr($currency),
-							'school_name'         => esc_attr($school_name),
+							'COLLEGE_NAME'         => esc_attr($COLLEGE_NAME),
 							'school_logo_url'     => esc_attr($school_logo_url),
 							'security'            => esc_attr($security),
 							'name'                => esc_attr($name),

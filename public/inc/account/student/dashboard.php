@@ -55,10 +55,10 @@ $schools = $wpdb->get_results('SELECT s.ID, s.label, s.phone, s.email, s.address
 			?>
 		</span>
 
-		<!-- School name information -->
+		<!-- College Name information -->
 		<?php foreach ($schools as $school) : ?><br>
 			<span class=" wlsm-pl-2">
-				<?php esc_html_e('School Name:', 'school-management') ?>
+				<?php esc_html_e('College Name:', 'school-management') ?>
 				<strong> <?php esc_html_e($school->label, 'school-management') ?></strong>
 			</span>
 			<br>
@@ -76,7 +76,7 @@ $schools = $wpdb->get_results('SELECT s.ID, s.label, s.phone, s.email, s.address
 				<strong> <?php esc_html_e($school->address, 'school-management') ?></strong>
 			</span>
 		<?php endforeach ?>
-		<!-- School name information -->
+		<!-- College Name information -->
 		<br>
 		<a style="float: right;" class="" href="<?php echo esc_url(add_query_arg(array('action' => 'settings'), $current_page_url)); ?>"><?php esc_html_e('Account Settings', 'school-management'); ?></a>
 		<br>

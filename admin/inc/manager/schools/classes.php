@@ -44,7 +44,7 @@ $classes = array_filter(
 						<?php
 						printf(
 							wp_kses(
-								/* translators: %s: school name */
+								/* translators: %s: College Name */
 								__( 'School: <span class="text-secondary">%s</span>', 'school-management' ),
 								array(
 									'span' => array( 'class' => array() )

@@ -5,7 +5,7 @@ class WLSM_M {
 	public static function get_student( $user_id ) {
 		global $wpdb;
 		$student = $wpdb->get_row(
-			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, sr.email, sr.phone, sr.father_name, sr.admission_number, sr.route_vehicle_id, sr.enrollment_number, sr.photo_id, c.label as class_label, se.class_school_id, se.ID as section_id, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, sr.session_id, ss.label as session_label, s.ID as school_id, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr
+			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, sr.email, sr.phone, sr.father_name, sr.admission_number, sr.route_vehicle_id, sr.enrollment_number, sr.photo_id, c.label as class_label, se.class_school_id, se.ID as section_id, se.label as section_label, sr.roll_number, u.user_email as login_email, u.user_login as username, sr.session_id, ss.label as session_label, s.ID as school_id, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr
 				JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id
 				JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id
 				JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id
@@ -22,7 +22,7 @@ class WLSM_M {
 	public static function get_student_profile( $user_id ) {
 		global $wpdb;
 		$student = $wpdb->get_row(
-			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, sr.photo_id, c.label as class_label, se.label as section_label, ss.label as session_label, s.label as school_name FROM ' . WLSM_STUDENT_RECORDS . ' as sr
+			$wpdb->prepare( 'SELECT sr.ID, sr.name as student_name, sr.photo_id, c.label as class_label, se.label as section_label, ss.label as session_label, s.label as COLLEGE_NAME FROM ' . WLSM_STUDENT_RECORDS . ' as sr
 				JOIN ' . WLSM_SESSIONS . ' as ss ON ss.ID = sr.session_id
 				JOIN ' . WLSM_SECTIONS . ' as se ON se.ID = sr.section_id
 				JOIN ' . WLSM_CLASS_SCHOOL . ' as cs ON cs.ID = se.class_school_id

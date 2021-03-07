@@ -239,7 +239,7 @@
 									'key': data.razorpay_key,
 									'amount': data.amount_in_paisa,
 									'currency': data.currency,
-									'name': data.school_name,
+									'name': data.COLLEGE_NAME,
 									'description': data.description,
 									'image': data.school_logo_url,
 									'handler': function(response) {
@@ -361,7 +361,7 @@
 									metadata: {
 										custom_fields: [
 											{
-												display_name: data.school_name,
+												display_name: data.COLLEGE_NAME,
 												phone: data.phone,
 												invoice_id: data.invoice_id,
 												amount: parseFloat(data.amount_x_100)

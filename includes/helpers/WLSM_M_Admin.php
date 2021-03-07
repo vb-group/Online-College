@@ -14,7 +14,7 @@ class WLSM_M_Admin {
 
 	public static function fetch_admin( $id ) {
 		global $wpdb;
-		$staff = $wpdb->get_row( $wpdb->prepare( 'SELECT sf.ID, u.ID as user_id, u.user_login as username, u.user_email as email, a.name as name, s.ID as school_id, s.label as school_name FROM ' . WLSM_STAFF . ' as sf 
+		$staff = $wpdb->get_row( $wpdb->prepare( 'SELECT sf.ID, u.ID as user_id, u.user_login as username, u.user_email as email, a.name as name, s.ID as school_id, s.label as COLLEGE_NAME FROM ' . WLSM_STAFF . ' as sf 
 			JOIN ' . WLSM_ADMINS . ' as a ON a.staff_id = sf.ID 
 			JOIN ' . WLSM_SCHOOLS . ' as s ON s.ID = sf.school_id 
 			LEFT OUTER JOIN ' . WLSM_USERS . ' as u ON u.ID = sf.user_id 

@@ -19,7 +19,7 @@ if ( isset( $_GET['id'] ) && ! empty( $_GET['id'] ) ) {
 
 		$user_id     = $staff->user_id;
 		$school_id   = $staff->school_id;
-		$school_name = $staff->school_name;
+		$COLLEGE_NAME = $staff->COLLEGE_NAME;
 		$name        = $staff->name;
 		$username    = $staff->username;
 		$email       = $staff->email;
@@ -40,13 +40,13 @@ if ( ! $staff ) {
 						<?php
 						printf(
 							wp_kses(
-								/* translators: %s: school name */
+								/* translators: %s: College Name */
 								__( 'School: <span class="text-secondary">%s</span>', 'school-management' ),
 								array(
 									'span' => array( 'class' => array() )
 								)
 							),
-							esc_html( WLSM_M_School::get_label_text( $school_name ) )
+							esc_html( WLSM_M_School::get_label_text( $COLLEGE_NAME ) )
 						);
 						?>
 					</h1>
