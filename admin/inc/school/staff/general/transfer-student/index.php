@@ -20,7 +20,7 @@ $page_url = WLSM_M_Staff_General::get_transfer_student_page_url();
 
 		<div class="mt-3 mb-2 text-center">
 			<div class="wlsm-font-bold">
-				<?php esc_html_e( 'Students Transferred to Other School', 'school-management' ); ?>
+				<?php esc_html_e( 'Students Transferred to Other College', 'school-management' ); ?>
 			</div>
 		</div>
 		<div class="wlsm-table-block wlsm-form-section">
@@ -50,7 +50,7 @@ $page_url = WLSM_M_Staff_General::get_transfer_student_page_url();
 
 		<div class="mt-2 mb-2 text-center">
 			<div class="wlsm-font-bold">
-				<?php esc_html_e( 'Students Transferred to this School', 'school-management' ); ?>
+				<?php esc_html_e( 'Students Transferred to this College', 'school-management' ); ?>
 			</div>
 		</div>
 		<div class="wlsm-table-block wlsm-form-section">

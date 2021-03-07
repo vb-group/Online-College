@@ -88,7 +88,7 @@ defined( 'ABSPATH' ) || die();
 				printf(
 					wp_kses(
 						/* translators: %s: session label */
-						__( 'Transferred to Other School <br><small class="text-secondary"> - Session: %s</small>', 'school-management' ),
+						__( 'Transferred to Other College <br><small class="text-secondary"> - Session: %s</small>', 'school-management' ),
 						array( 'small' => array( 'class' => array() ), 'br' => array() )
 					),
 					esc_html( WLSM_M_Session::get_label_text( $current_session['label'] ) )
@@ -107,7 +107,7 @@ defined( 'ABSPATH' ) || die();
 				printf(
 					wp_kses(
 						/* translators: %s: session label */
-						__( 'Transferred to this School <br><small class="text-secondary"> - Session: %s</small>', 'school-management' ),
+						__( 'Transferred to this College <br><small class="text-secondary"> - Session: %s</small>', 'school-management' ),
 						array( 'small' => array( 'class' => array() ), 'br' => array() )
 					),
 					esc_html( WLSM_M_Session::get_label_text( $current_session['label'] ) )

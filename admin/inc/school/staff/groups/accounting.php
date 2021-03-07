@@ -198,7 +198,7 @@ $page_url_income   = admin_url('admin.php?page=' . WLSM_MENU_STAFF_INCOME);
 		}
 
 		if (WLSM_M_Role::check_permission(array('manage_transfer_student'), $current_school['permissions'])) {
-			// Students Transferred to Other School.
+			// Students Transferred to Other College.
 			$students_transferred_to_count = $wpdb->get_var(
 				$wpdb->prepare('SELECT COUNT(DISTINCT sr.ID) FROM ' . WLSM_TRANSFERS . ' as tf 
 			JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = tf.from_student_record 
@@ -208,7 +208,7 @@ $page_url_income   = admin_url('admin.php?page=' . WLSM_MENU_STAFF_INCOME);
 			WHERE cs.school_id = %d AND ss.ID = %d', $school_id, $session_id)
 			);
 
-			// Students Transferred to this School.
+			// Students Transferred to this College.
 			$students_transferred_from_count = $wpdb->get_var(
 				$wpdb->prepare('SELECT COUNT(DISTINCT sr.ID) FROM ' . WLSM_TRANSFERS . ' as tf 
 			JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = tf.to_student_record 

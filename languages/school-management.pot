@@ -6050,12 +6050,12 @@ msgstr ""
 
 #. translators: %s: session label
 #: admin/inc/school/staff/general/dashboard/stats.php:91
-msgid "Transferred to Other School <br><small class=\"text-secondary\"> - Session: %s</small>"
+msgid "Transferred to Other College <br><small class=\"text-secondary\"> - Session: %s</small>"
 msgstr ""
 
 #. translators: %s: session label
 #: admin/inc/school/staff/general/dashboard/stats.php:110
-msgid "Transferred to this School <br><small class=\"text-secondary\"> - Session: %s</small>"
+msgid "Transferred to this College <br><small class=\"text-secondary\"> - Session: %s</small>"
 msgstr ""
 
 #. translators: %s: session label
@@ -7495,7 +7495,7 @@ msgid "Students Transferred"
 msgstr ""
 
 #: admin/inc/school/staff/general/transfer-student/index.php:23
-msgid "Students Transferred to Other School"
+msgid "Students Transferred to Other College"
 msgstr ""
 
 #: admin/inc/school/staff/general/transfer-student/index.php:42
@@ -7508,7 +7508,7 @@ msgid "Transfer Date"
 msgstr ""
 
 #: admin/inc/school/staff/general/transfer-student/index.php:53
-msgid "Students Transferred to this School"
+msgid "Students Transferred to this College"
 msgstr ""
 
 #: admin/inc/school/staff/general/transfer-student/index.php:72

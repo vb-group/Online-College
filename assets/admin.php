@@ -104,12 +104,12 @@ add_action( 'wp_ajax_wlsm-promote-student', array( 'WLSM_Staff_General', 'promot
 // Staff: Transfer student.
 add_action( 'wp_ajax_wlsm-transfer-student', array( 'WLSM_Staff_General', 'transfer_student' ) );
 
-// Staff: Transferred to Other School.
+// Staff: Transferred to Other College.
 add_action( 'wp_ajax_wlsm-fetch-transferred-to-school', array( 'WLSM_Staff_General', 'fetch_transferred_to_school' ) );
 add_action( 'wp_ajax_wlsm-view-transferred-to-note', array( 'WLSM_Staff_General', 'view_transferred_to_note' ) );
 add_action( 'wp_ajax_wlsm-delete-transferred-to', array( 'WLSM_Staff_General', 'delete_transferred_to' ) );
 
-// Staff: Transferred to this School.
+// Staff: Transferred to this College.
 add_action( 'wp_ajax_wlsm-fetch-transferred-from-school', array( 'WLSM_Staff_General', 'fetch_transferred_from_school' ) );
 add_action( 'wp_ajax_wlsm-view-transferred-from-note', array( 'WLSM_Staff_General', 'view_transferred_from_note' ) );
 add_action( 'wp_ajax_wlsm-delete-transferred-from', array( 'WLSM_Staff_General', 'delete_transferred_from' ) );

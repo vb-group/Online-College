@@ -191,7 +191,7 @@ if ( WLSM_M_Role::check_permission( array( 'manage_inquiries' ), $current_school
 }
 
 if ( WLSM_M_Role::check_permission( array( 'manage_transfer_student' ), $current_school['permissions'] ) ) {
-	// Students Transferred to Other School.
+	// Students Transferred to Other College.
 	$students_transferred_to_count = $wpdb->get_var(
 		$wpdb->prepare( 'SELECT COUNT(DISTINCT sr.ID) FROM ' . WLSM_TRANSFERS . ' as tf 
 			JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = tf.from_student_record 
@@ -201,7 +201,7 @@ if ( WLSM_M_Role::check_permission( array( 'manage_transfer_student' ), $current
 			WHERE cs.school_id = %d AND ss.ID = %d', $school_id, $session_id )
 	);
 
-	// Students Transferred to this School.
+	// Students Transferred to this College.
 	$students_transferred_from_count = $wpdb->get_var(
 		$wpdb->prepare( 'SELECT COUNT(DISTINCT sr.ID) FROM ' . WLSM_TRANSFERS . ' as tf 
 			JOIN ' . WLSM_STUDENT_RECORDS . ' as sr ON sr.ID = tf.to_student_record 
@@ -226,7 +226,7 @@ if ( WLSM_M_Role::check_permission( array( 'manage_admissions', 'manage_invoices
 		<div class="mt-3 text-center wlsm-section-heading-block">
 			<span class="wlsm-section-heading">
 				<i class="fas fa-tachometer-alt"></i>
-				<?php esc_html_e( 'School Dashboard', 'school-management' ); ?>
+				<?php esc_html_e( 'College Dashboard', 'school-management' ); ?>
 			</span>
 			<?php if ( current_user_can( WLSM_ADMIN_CAPABILITY ) ) { ?>
 			<span class="float-md-right">

@@ -4318,7 +4318,7 @@
 		var transferredToSchoolTable = $('#wlsm-transferred-to-school-table');
 		wlsmInitializeTable(transferredToSchoolTable, { action: 'wlsm-fetch-transferred-to-school' });
 
-		// Staff: Get transferred to other school note.
+		// Staff: Get Transferred to Other College note.
 		$(document).on('click', '.wlsm-view-transferred-to-note', function(event) {
 			var element = $(this);
 			var studentId = element.data('transferred-to');
@@ -4348,7 +4348,7 @@
 			});
 		});
 
-		// Staff: Delete transferred to other school record.
+		// Staff: Delete Transferred to Other College record.
 		$(document).on('click', '.wlsm-delete-transferred-to', function(event) {
 			event.preventDefault();
 			var studentId = $(this).data('transferred-to');
