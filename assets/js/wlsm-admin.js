@@ -130,8 +130,8 @@
 		copyToClipboard('#wlsm_college_management_fees_default_session_copy_btn', '#wlsm_college_management_fees_default_session_shortcode');
 		copyToClipboard('#wlsm_college_management_exam_time_table_copy_btn', '#wlsm_college_management_exam_time_table_shortcode');
 		copyToClipboard('#wlsm_college_management_exam_admit_card_copy_btn', '#wlsm_college_management_exam_admit_card_shortcode');
-		copyToClipboard('#wlsm_school_management_exam_result_copy_btn', '#wlsm_school_management_exam_result_shortcode');
-		copyToClipboard('#wlsm_school_management_certificate_copy_btn', '#wlsm_school_management_certificate_shortcode');
+		copyToClipboard('#wlsm_college_management_exam_result_copy_btn', '#wlsm_college_management_exam_result_shortcode');
+		copyToClipboard('#wlsm_college_management_certificate_copy_btn', '#wlsm_college_management_certificate_shortcode');
 		copyToClipboard('#wlsm_school_management_noticeboard_copy_btn', '#wlsm_school_management_noticeboard_shortcode');
 
 		// Loading icon variables.
