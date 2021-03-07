@@ -1274,7 +1274,7 @@ class WLSM_Database
 		global $wpdb;
 
 		$default_school_data = array(
-			'label' => esc_html__('Default School', 'school-management'),
+			'label' => esc_html__('Default College', 'school-management'),
 		);
 
 		$default_school_data['created_at'] = current_time('Y-m-d H:i:s');
