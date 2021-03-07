@@ -34,8 +34,8 @@ add_shortcode( 'school_management_inquiry', array( 'WLSM_Shortcode', 'inquiry' )
 add_shortcode( 'school_management_registration', array( 'WLSM_Shortcode', 'registration' ) );
 add_shortcode( 'college_management_fees', array( 'WLSM_Shortcode', 'fees' ) );
 add_shortcode( 'school_management_noticeboard', array( 'WLSM_Shortcode', 'noticeboard' ) );
-add_shortcode( 'school_management_exam_time_table', array( 'WLSM_Shortcode', 'exam_time_table' ) );
-add_shortcode( 'school_management_exam_admit_card', array( 'WLSM_Shortcode', 'exam_admit_card' ) );
+add_shortcode( 'college_management_exam_time_table', array( 'WLSM_Shortcode', 'exam_time_table' ) );
+add_shortcode( 'college_management_exam_admit_card', array( 'WLSM_Shortcode', 'exam_admit_card' ) );
 add_shortcode( 'school_management_exam_result', array( 'WLSM_Shortcode', 'exam_result' ) );
 add_shortcode( 'school_management_certificate', array( 'WLSM_Shortcode', 'certificate' ) );
 

@@ -630,8 +630,8 @@ $subject_types = WLSM_Helper::subject_type_list();
 									<li class="list-inline-item">
 										<div class="alert alert-light">
 											<?php esc_html_e( 'To display exam time table on a page or post, use shortcode', 'school-management' ); ?>:<br>
-												<span id="wlsm_school_management_exam_time_table_shortcode" class="wlsm-font-bold text-dark">[school_management_exam_time_table school_id="<?php echo esc_html( $school_id ); ?>" exam_id="<?php echo esc_html( $exam->ID ); ?>"]</span>
-											<button id="wlsm_school_management_exam_time_table_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+												<span id="wlsm_college_management_exam_time_table_shortcode" class="wlsm-font-bold text-dark">[college_management_exam_time_table school_id="<?php echo esc_html( $school_id ); ?>" exam_id="<?php echo esc_html( $exam->ID ); ?>"]</span>
+											<button id="wlsm_college_management_exam_time_table_copy_btn" class="btn btn-outline-success btn-sm" type="button">
 												<?php esc_html_e( 'Copy', 'school-management' ); ?>
 											</button>
 										</div>
@@ -657,8 +657,8 @@ $subject_types = WLSM_Helper::subject_type_list();
 									<li class="list-inline-item">
 										<div class="alert alert-light">
 											<?php esc_html_e( 'To display exam admit cards form on a page or post, use shortcode', 'school-management' ); ?>:<br>
-												<span id="wlsm_school_management_exam_admit_card_shortcode" class="wlsm-font-bold text-dark">[school_management_exam_admit_card school_id="<?php echo esc_html( $school_id ); ?>" exam_id="<?php echo esc_html( $exam->ID ); ?>"]</span>
-											<button id="wlsm_school_management_exam_admit_card_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+												<span id="wlsm_college_management_exam_admit_card_shortcode" class="wlsm-font-bold text-dark">[college_management_exam_admit_card school_id="<?php echo esc_html( $school_id ); ?>" exam_id="<?php echo esc_html( $exam->ID ); ?>"]</span>
+											<button id="wlsm_college_management_exam_admit_card_copy_btn" class="btn btn-outline-success btn-sm" type="button">
 												<?php esc_html_e( 'Copy', 'school-management' ); ?>
 											</button>
 										</div>
