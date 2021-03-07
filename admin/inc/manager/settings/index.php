@@ -248,8 +248,8 @@ add_filter('user_can_richedit', '__return_false', 50);
 							<li class="list-inline-item">
 								<div class="alert alert-light">
 									<?php esc_html_e('To display registration form on a page or post, use shortcode', 'school-management'); ?>:<br>
-									<span id="wlsm_school_management_registration_shortcode" class="wlsm-font-bold text-dark">[school_management_registration]</span>
-									<button id="wlsm_school_management_registration_copy_btn" class="btn btn-outline-success btn-sm" type="button">
+									<span id="wlsm_college_management_registration_shortcode" class="wlsm-font-bold text-dark">[college_management_registration]</span>
+									<button id="wlsm_college_management_registration_copy_btn" class="btn btn-outline-success btn-sm" type="button">
 										<?php esc_html_e('Copy', 'school-management'); ?>
 									</button>
 								</div>
