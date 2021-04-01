@@ -114,4 +114,9 @@ $school_leave_request    = $settings_dashboard['school_leave_request'];
 	</li>
 
 <?php endif ?>
+<li>
+    <a class="wlsm-logout-link" href="<?php echo esc_url( $logout_url ); ?>">
+			<?php esc_html_e( 'Logout', 'school-management' ); ?>
+		</a>
+</li>
 </ul>

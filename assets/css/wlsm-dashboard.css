@@ -241,11 +241,15 @@
 	top: 0;
 }
 @media(min-width: 768px) {
-	.wlsm-container .wlsm-navigation-links {
+    .wlsm-container{
+        padding-top: 20px;
+    }
+    .wlsm-container .wlsm-navigation-links {
 		box-sizing: border-box;
 		width: 20%;
-		float: right;
-	}
+        position: absolute;
+        left: 80%;
+    }
 	.wlsm-shortcode-entity .wlsm-content-area {
 		width: unset;
 		float: none;
