@@ -8,9 +8,9 @@ defined( 'ABSPATH' ) || die();
 			<?php echo esc_html( WLSM_M_School::get_label_text( $current_school['name'] ) ); ?>
 			<small class="wlsm_text_secondary"><?php echo esc_html( $current_session['label'] ); ?></small>
 			<?php if ( current_user_can( WLSM_ADMIN_CAPABILITY ) ) { ?>
-			<div class="float-right wlsm-android">
+			<!-- <div class="float-right wlsm-android">
 				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.infigoschool"><img src="<?php echo esc_url( WLSM_PLUGIN_URL . 'assets/images/android.png' ); ?>"></a>
-			</div>
+			</div> -->
 			<?php } ?>
 		</h1>
 		<?php
