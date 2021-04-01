@@ -40,8 +40,8 @@ if ( ! is_user_logged_in() ) {
 	$logout_url = wp_logout_url( $logout_redirect_url );
 	?>
 	<div class="wlsm-logged-in-info">
-		<span class="wlsm-logged-in-text"><?php esc_html_e( 'You are logged in.', 'school-management' ); ?></span>
-		<a class="wlsm-logout-link" href="<?php echo esc_url( $logout_url ); ?>">
+		<span class="wlsm-logged-in-text" style="display: none;"><?php esc_html_e( 'You are logged in.', 'school-management' ); ?></span>
+		<a class="wlsm-logout-link" href="<?php echo esc_url( $logout_url ); ?>" style="display: none;">
 			<?php esc_html_e( 'Logout', 'school-management' ); ?>
 		</a>
 		<br>
